@@ -917,3 +917,18 @@ footer p {
     height: 240px;
   }
 }
+
+.topbar nav .nav-link {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.topbar nav .nav-link.active {
+  font-weight: 700;
+}
+
+.topbar .logo {
+  text-decoration: none;
+}
