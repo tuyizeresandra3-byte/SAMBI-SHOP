@@ -1,4 +1,5 @@
-
+import AdminAccess from "./AdminAccess.jsx";
+import SupabaseTest from "./SupabaseTest.jsx";
 import React, { useEffect, useMemo, useState } from "react";
 import {
   Routes,
@@ -282,15 +283,10 @@ function App() {
     <>
       <section className="hero">
         <div className="hero-content">
-          <span className="eyebrow">WELCOME TO SAMBI-SHOP</span>
-
-          <h1>
-            Style that speaks.<br />
-            <span>Fashion delivered</span>
-          </h1>
+          <h1> <span>WELCOME TO SAMBI-SHOP</span></h1>
 
           <p>
-            Discover beautiful clothing and shoes for men, women and your little ones.
+            Fashion Delivered to Your Doorstep
           </p>
 
           <button
@@ -402,9 +398,8 @@ function App() {
                 </span>
 
                 <button
-                  className={`wishlist-btn ${
-                    wishlist.some(item => item.id === product.id) ? "liked" : ""
-                  }`}
+                  className={`wishlist-btn ${wishlist.some(item => item.id === product.id) ? "liked" : ""
+                    }`}
                   onClick={() => toggleWishlist(product)}
                 >
                   {wishlist.some(item => item.id === product.id) ? "♥" : "♡"}
@@ -822,10 +817,11 @@ function App() {
         <Route path="/shop" element={shopPage} />
         <Route path="/wishlist" element={wishlistPage} />
         <Route path="/cart" element={cartPage} />
-        <Route path="/admin" element={adminPage} />
+        <Route path="/admin"element={<AdminAccess>{adminPage}
+            </AdminAccess>}/>
         <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="/supabase-test" element={<SupabaseTest />}/>
       </Routes>
-
       {selectedProduct && (
         <div
           className="modal-overlay"
@@ -956,7 +952,7 @@ function App() {
 
       <footer>
         <h2>SAMBI-SHOP</h2>
-        <p>Fashion Delivered to Your Doorstep.</p>
+        <p> </p>
         <p>Men · Women · Babies · Clothing · Shoes</p>
         <p>© 2026 SAMBI-SHOP. All rights reserved.</p>
       </footer>

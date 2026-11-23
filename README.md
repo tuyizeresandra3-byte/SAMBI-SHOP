@@ -1,233 +1,161 @@
-# SAMBI-SHOP
+# SAMBI-SHOP – Online shopping&#x20;
 
-A responsive fashion e-commerce web application that makes it easier for customers to explore clothing and shoes for men, women, and babies.
+## About My Project
 
-[![React](https://img.shields.io/badge/React-19-blue?logo=react)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-Frontend-purple?logo=vite)](https://vite.dev/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+SAMBI-SHOP is an online shopping website I created to make buying fashion products easier and more convenient. Customers can explore different collections, check product details, choose their preferred options, add products to their wishlist and shopping cart, and place orders.
+
+I wanted to create a simple, attractive and user-friendly website where people can shop for men, women and babies in one place.
 
 ## Live Demo
 
-Live Website: To be added after deployment.
-
-GitHub Repository: https://github.com/tuyizeresandra3-byte/SAMBI-SHOP
+## Website link:
 
 ## Screenshots
 
-Add screenshots of your finished application here.
 
-Suggested screenshots:
-- Homepage and navigation
-- Product catalogue
-- Product details
-- Shopping cart and checkout
-- Wishlist
-- Admin dashboard
+The screenshots below show the main parts of my project:
 
-Example:
+- Homepage – Welcome page and featured fashion.
+- Shop Page – Available products and collections.
+- Product Details – Product information and available options.
+- Wishlist – Favourite products.
+- Shopping Cart – Selected products.
+- Admin Dashboard – Store and inventory management.
+- Admin Login – Administrator access.
 
-```markdown
-![SAMBI-SHOP Homepage](./public/images/homepage.png)
-```
-
-## Project Overview
-
-SAMBI-SHOP is a fashion e-commerce project developed as part of my frontend development learning journey.
-
-The application provides a digital shopping experience where customers can browse products, search for items, explore product details, manage their shopping cart, and place demo orders.
-
-The project also includes an administration dashboard for managing products, inventory, and customer orders.
-
-## Problem Statement
-
-Customers need a convenient way to explore fashion products and manage their shopping experience online.
-
-SAMBI-SHOP aims to provide a simple, accessible, and responsive shopping platform for customers interested in clothing and shoes.
-
-## Target Users
-
-- Customers shopping for men's fashion.
-- Customers shopping for women's fashion.
-- Parents and guardians looking for baby products.
-- Store administrators managing products and orders.
+\<!-- Add your screenshot images here using their actual file paths -->
 
 ## Features
 
-### Customer Features
-- Browse fashion products.
-- Explore product categories.
-- Search and filter products.
-- Sort products.
-- View product details.
-- Select product sizes and colours where available.
+- Browse products for men, women and babies.
+- Search and filter products by category.
+- View product details and prices.
+- Select available sizes and colours.
+- Add and remove products from the wishlist.
 - Add products to the shopping cart.
-- Update product quantities.
-- Add products to a wishlist.
-- Complete a demo checkout.
-- Select from Cash on Delivery, MTN Mobile Money, and Airtel Money options.
+- Check product availability and stock.
+- Admin login and dashboard.
+- Manage products and inventory.
+- View and manage customer orders.
+- Responsive and attractive user interface.
 
-### Admin Features
-- View dashboard statistics.
-- Add and remove products.
-- Monitor product inventory.
-- View customer orders.
-- Update order statuses.
+## 🛠️ Technologies Used
 
-Payment notice: Payment options are currently presented as demo checkout choices. The application does not yet process real MTN Mobile Money or Airtel Money transactions.
+- **React.js** – Building the user interface.
+- **JavaScript** – Adding functionality and interactions.
+- **HTML** – Structuring the website.
+- **CSS** – Styling and designing the pages.
+- **Vite** – Running and building the project.
+- **Supabase** – Backend services and database integration.
+- **Git and GitHub** – Version control and project hosting.
+- **Vercel** – Deployment.
 
-## Technology Stack
+## 🚀 How to Install and Run the Project
 
-| Technology | Purpose |
-|---|---|
-| React | Building interactive user interfaces |
-| JavaScript (ES6+) | Application logic |
-| HTML5 | Webpage structure |
-| CSS3 | Styling and responsive design |
-| Vite | Development server and build tool |
-| React DOM | Rendering React components |
-| React Router DOM | Routing dependency |
-| Lucide React | Icons |
-| Local Storage | Persisting selected application data |
-| Vitest | Testing framework configuration |
+To run Sambi-Shop on your computer:
 
-## Getting Started
-
-Follow these instructions to run the project locally.
-
-### Prerequisites
-
-- Node.js installed.
-- npm installed.
-- Git installed.
-- Visual Studio Code or another code editor.
-
-### 1. Clone the repository
+1. Make sure you have Node.js installed.
+2. Clone the project from GitHub:
 
 ```bash
-git clone https://github.com/tuyizeresandra3-byte/SAMBI-SHOP.git
+git clone YOUR_GITHUB_REPOSITORY_LINK
 ```
 
-### 2. Open the project folder
+3. Open the project folder:
 
 ```bash
-cd SAMBI-SHOP
+cd sambi-shop
 ```
 
-### 3. Install dependencies
+4. Install the required packages:
 
 ```bash
 npm install
 ```
 
-### 4. Start the development server
+5. Configure the required Supabase environment variables in your `.env.local` file.
+
+6. Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Open the local URL displayed in your terminal, usually:
+7. Open the local link provided in your terminal.
+
+## 📁 Project Structure
 
 ```text
-http://localhost:5173/
-```
-
-### 5. Build for production
-
-```bash
-npm run build
-```
-
-### 6. Preview the production build
-
-```bash
-npm run preview
-```
-
-**Windows PowerShell note:** If PowerShell blocks the npm command, use `npm.cmd` instead, for example `npm.cmd run dev`.
-
-## Project Structure
-
-The current application is primarily organized around the following files. Update this structure if the project is later separated into components and pages.
-
-```text
-SAMBI-SHOP/
+sambi-shop/
 │
 ├── public/
-│   └── images/
 │
 ├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── context/
+│   ├── hooks/
+│   ├── lib/
+│   │   └── supabaseClient.js
+│   ├── pages/
+│   ├── services/
+│   ├── utils/
+│   ├── AdminAccess.jsx
 │   ├── App.jsx
 │   ├── App.css
 │   ├── index.css
-│   ├── main.jsx
-│   └── test-setup.js
+│   └── main.jsx
 │
+├── .env.local
+├── .gitignore
 ├── index.html
 ├── package.json
-├── eslint.config.js
-├── vite.config.js
-└── README.md
+├── package-lock.json
+├── README.md
+├── vercel.json
+└── vite.config.js
 ```
 
-## APIs and Data Storage
+## 🔌 API and Backend
 
-The current version does not use a dedicated backend API or database.
+I used Supabase to support the backend side of my project. It helps the application connect with backend services and manage data.
 
-- Product and order information is managed within the frontend application.
-- Browser Local Storage is used to persist selected data.
-- Product images use externally hosted image URLs.
+The project uses environment variables to configure the Supabase connection. Private keys and passwords should not be shared publicly.
 
-Future versions may connect to a backend API and database to support secure user accounts, centralized product management, and real transactions.
+## 💡 Challenges and How I Worked Through Them
 
-## Challenges and Solutions
+While building this project, I faced some challenges, especially when working with the admin dashboard, product information and backend connection.
 
-Some important development areas addressed in this project include:
+Some of the things I worked on included:
 
-1. Managing application state: React state is used to manage products, shopping cart items, wishlist information, and orders.
-2. Persisting information:Local Storage helps preserve selected information between browser sessions.
-3. Inventory management: Product stock is updated when demo orders are placed.
-4. Responsive design: CSS media queries help the shopping interface adapt to different screen sizes.
+- Making sure products and their stock information display correctly.
+- Working on the admin section for managing store products.
+- Connecting the frontend with Supabase.
+- Making the website easy to navigate and visually attractive.
+- Fixing errors and testing different parts of the application.
 
-Add specific bugs you encountered and how you resolved them as you complete testing.
+These challenges helped me understand React better and improve my problem-solving skills.
 
-## Performance and Testing
+## 🔮 Future Improvements
 
-Lighthouse results will be added after deployment and testing.
+There are still some things I would like to improve in Sambi-Shop:
 
-| Lighthouse category | Score |
-|---|---|
-| Performance | To be measured |
-| Accessibility | To be measured |
-| Best Practices | To be measured |
-| SEO | To be measured |
-
-Testing tools and commands:
-- Browser Developer Tools
-- Vite production build
-- Vitest test runner
-
-## Future Improvements
-
-- Integrate real MTN Mobile Money and Airtel Money payment services.
-- Build a secure backend and database.
+- Add secure online payment options.
+- Introduce order tracking for customers.
+- Improve inventory and sales reports.
 - Add customer registration and login.
-- Implement secure admin authentication and authorization.
-- Add product editing and image uploading.
-- Improve product recommendations.
-- Add order tracking and customer notifications.
-- Optimize product images and website performance.
+- Improve the website's performance and mobile experience.
 
-## Developer
+## 🙏 Credits
 
-**Sandrine Tuyizere**
+This project was developed as part of my learning journey in frontend development.
 
-Frontend Development Learner | React | JavaScript | HTML | CSS
+I would like to appreciate my facilitators and everyone who supported me throughout the development process.
 
-- GitHub: https://github.com/tuyizeresandra3-byte
-- Project: https://github.com/tuyizeresandra3-byte/SAMBI-SHOP
+**Developer:** [Your Name]
 
-## Acknowledgements
+**Project:** Sambi-Shop
 
-This project was developed as part of my frontend development learning journey.
+**Programme:** Innovate4JidJob – Cohort 02
 
-I appreciate the instructors, mentors, and learning community who supported my progress and helped me develop practical web development skills.
+Thank you for taking the time to explore my project!
