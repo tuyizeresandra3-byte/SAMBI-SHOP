@@ -1,4 +1,4 @@
-# SAMBI-SHOP – Online shopping&#x20;
+# SAMBI-SHOP – Online shopping
 
 ## About My Project
 
@@ -8,7 +8,8 @@ I wanted to create a simple, attractive and user-friendly website where people c
 
 ## Live Demo
 
-## Website link:
+## Website link: http://localhost:5173/shop
+
 
 ## Screenshots
 
@@ -39,7 +40,7 @@ The screenshots below show the main parts of my project:
 - View and manage customer orders.
 - Responsive and attractive user interface.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **React.js** – Building the user interface.
 - **JavaScript** – Adding functionality and interactions.
@@ -50,7 +51,7 @@ The screenshots below show the main parts of my project:
 - **Git and GitHub** – Version control and project hosting.
 - **Vercel** – Deployment.
 
-## 🚀 How to Install and Run the Project
+##  How to Install and Run the Project
 
 To run Sambi-Shop on your computer:
 
@@ -83,7 +84,7 @@ npm run dev
 
 7. Open the local link provided in your terminal.
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 sambi-shop/
@@ -116,13 +117,13 @@ sambi-shop/
 └── vite.config.js
 ```
 
-## 🔌 API and Backend
+## API and Backend
 
 I used Supabase to support the backend side of my project. It helps the application connect with backend services and manage data.
 
 The project uses environment variables to configure the Supabase connection. Private keys and passwords should not be shared publicly.
 
-## 💡 Challenges and How I Worked Through Them
+## Challenges and How I Worked Through Them
 
 While building this project, I faced some challenges, especially when working with the admin dashboard, product information and backend connection.
 
@@ -136,7 +137,7 @@ Some of the things I worked on included:
 
 These challenges helped me understand React better and improve my problem-solving skills.
 
-## 🔮 Future Improvements
+## Future Improvements
 
 There are still some things I would like to improve in Sambi-Shop:
 
@@ -146,16 +147,16 @@ There are still some things I would like to improve in Sambi-Shop:
 - Add customer registration and login.
 - Improve the website's performance and mobile experience.
 
-## 🙏 Credits
+## Credits
 
 This project was developed as part of my learning journey in frontend development.
 
 I would like to appreciate my facilitators and everyone who supported me throughout the development process.
 
-**Developer:** [Your Name]
+Developer:  TUYIZERE Sandrine
 
-**Project:** Sambi-Shop
+Project:Sambi-Shop
 
-**Programme:** Innovate4JidJob – Cohort 02
+Programme: Innovate4JidJob – Cohort 02
 
 Thank you for taking the time to explore my project!
